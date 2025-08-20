@@ -9,7 +9,7 @@ export default function Footer() {
          <img 
   src="/assets/sou1.png" 
   alt="Souqnests Logo" 
-  className="h-20 w-auto"
+  className="h-22 w-auto"
 />
 
           <p className="mt-3 text-sm">
@@ -25,7 +25,7 @@ export default function Footer() {
 
         {/* Learning Hub (you can rename to "Solutions") */}
         <div>
-          <h3 className="text-white text-lg font-semibold mb-3 border-b border-purple-400 pb-1">
+          <h3 className="text-white text-lg font-semibold mb-3 border-b border-sky-500 pb-1">
             Solutions
           </h3>
           <ul className="space-y-2 text-sm">
@@ -40,7 +40,7 @@ export default function Footer() {
 
         {/* Support */}
         <div>
-          <h3 className="text-white text-lg font-semibold mb-3 border-b border-purple-400 pb-1">
+          <h3 className="text-white text-lg font-semibold mb-3 border-b border-sky-500 pb-1">
             Support
           </h3>
           <ul className="space-y-2 text-sm">
@@ -54,7 +54,7 @@ export default function Footer() {
 
         {/* Newsletter */}
         <div>
-          <h3 className="text-white text-lg font-semibold mb-3 border-b border-purple-400 pb-1">
+          <h3 className="text-white text-lg font-semibold mb-3 border-b border-sky-500 pb-1">
             Stay Connected
           </h3>
           <p className="text-sm mb-3">
@@ -66,7 +66,7 @@ export default function Footer() {
               placeholder="Enter your email"
               className="p-2 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-purple-400"
             />
-            <button className="bg-purple-600 hover:bg-purple-700 text-white py-2 rounded">
+            <button className="bg-sky-400 hover:bg-sky-500 text-white py-2 rounded cursor-pointer">
               Subscribe Now
             </button>
           </div>
@@ -81,11 +81,11 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="bg-[#0a1522] text-center py-4 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center px-6">
-        <p>© {new Date().getFullYear()} Souqnests. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} <strong>SOUQNESTS.</strong> All rights reserved.</p>
         <div className="flex gap-6 mt-2 md:mt-0">
-          <a href="/privacy" className="hover:text-purple-400">Privacy Policy</a>
-          <a href="/terms" className="hover:text-purple-400">Terms of Service</a>
-          <a href="/security" className="hover:text-purple-400">Security</a>
+          <a href="/privacy" className="hover:text-sky-400">Privacy Policy</a>
+          <a href="/terms" className="hover:text-sky-400">Terms of Service</a>
+          <a href="/security" className="hover:text-sky-400">Security</a>
         </div>
       </div>
     </footer>

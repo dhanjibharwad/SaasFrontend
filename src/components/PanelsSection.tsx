@@ -5,7 +5,7 @@ import React from "react";
 /** tiny gradient tick */
 const Tick: React.FC = () => (
   <span className="inline-flex h-5 w-5 items-center justify-center rounded-full
-                   bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white shadow">
+                   bg-gradient-to-r from-sky-400 to-sky-500 text-white shadow">
     <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
       <path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
@@ -44,7 +44,7 @@ export default function PanelsSection() {
     {/* Header (your exact copy) */}
     <div className="mb-8 lg:text-right">
       <span className="text-l font-bold tracking-[.2em] uppercase
-                       bg-gradient-to-r from-sky-500 via-purple-600 to-fuchsia-600
+                       bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600
                        bg-clip-text text-transparent">
         Panels
       </span>
@@ -61,7 +61,7 @@ export default function PanelsSection() {
       {/* Admin */}
       <article className={card}>
         <div className="flex items-center justify-between">
-          <h3 className="text-2xl font-bold text-violet-700">Admin</h3>
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">Admin</h3>
           <IconBadge />
         </div>
 
@@ -77,7 +77,7 @@ export default function PanelsSection() {
       {/* Buyer */}
       <article className={card}>
         <div className="flex items-center justify-between">
-          <h3 className="text-2xl font-bold text-violet-700">Buyer</h3>
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">Buyer</h3>
           <IconBadge />
         </div>
 
@@ -95,7 +95,7 @@ export default function PanelsSection() {
       {/* Supplier */}
       <article className={card}>
         <div className="flex items-center justify-between">
-          <h3 className="text-2xl font-bold text-violet-700">Supplier</h3>
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">Supplier</h3>
           <IconBadge />
         </div>
 

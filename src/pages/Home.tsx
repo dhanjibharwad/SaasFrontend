@@ -7,23 +7,6 @@ import PanelsSection from "../components/PanelsSection";
 const card =
   "rounded-2xl border border-slate-200/70 bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,.05)] p-6";
 
-// const SectionTitle: React.FC<{ title: string; eyebrow?: string; desc?: string }> = ({
-//   title,
-//   eyebrow,
-//   desc,
-// }) => (
-//   <header className="mb-8">
-//     {eyebrow && (
-//       <span className="inline-flex items-center gap-2 bg-white/80 text-slate-700 border border-slate-200 px-3 py-1.5 rounded-full text-xs font-bold shadow-sm">
-//         {eyebrow}
-//       </span>
-//     )}
-//     <h2 className="mt-3 text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">
-//       {title}
-//     </h2>
-//     {desc && <p className="mt-2 text-slate-600 max-w-3xl">{desc}</p>}
-//   </header>
-// );
 
 /** New list item (replaces <Bullet/>) */
 type LiProps = {
@@ -42,7 +25,7 @@ const Li = ({ children, className = "" }: LiProps) => (
     {/* Accent icon */}
     <span
       className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center
-                 rounded-full bg-gradient-to-r from-orange-400 via-pink-500 to-indigo-600
+                 rounded-full bg-gradient-to-r from-sky-400 to-sky-400
                  text-white shadow-md"
       aria-hidden="true"
     >
@@ -86,7 +69,7 @@ const Home: React.FC = () => {
           {/* Right: Content */}
           <div className="lg:col-span-6">
             <span className="inline-block text-l font-bold tracking-[.2em] uppercase">
-              <span className="bg-gradient-to-r from-amber-500 via-pink-600 to-fuchsia-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
                 About Us
               </span>
             </span>
@@ -103,26 +86,18 @@ const Home: React.FC = () => {
             </p>
 
             <div className="mt-8">
-              <Link
-                to="/about"
-                className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white
-                           bg-gradient-to-r from-amber-400 via-pink-500 to-fuchsia-600
-                           shadow-lg hover:shadow-xl transition-all duration-200"
-              >
-                See About Us
-                <svg
-                  className="w-4 h-4"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M5 12h14" />
-                  <path d="M12 5l7 7-7 7" />
-                </svg>
-              </Link>
+             <Link
+  to="/about"
+  className="group inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white
+             bg-gradient-to-r from-sky-400 to-sky-500
+             shadow-lg hover:shadow-xl active:scale-[0.99] transition-all"
+>
+  See About Us
+  <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M5 12h14" /><path d="M12 5l7 7-7 7" />
+  </svg>
+</Link>
+
             </div>
           </div>
         </div>
@@ -224,7 +199,7 @@ const Home: React.FC = () => {
       {/* Left -> Right: Illustration (now on the RIGHT at lg+) */}
       <div className="lg:col-span-6 lg:order-2 flex justify-center">
         <img
-          src="/assets/saas3.png" // <-- replace with your image path
+          src="/assets/saas231.png" // <-- replace with your image path
           alt="Team collaborating with charts, target and puzzle blocks"
           className="w-full max-w-2xl h-auto object-contain"
           loading="lazy"
@@ -234,7 +209,7 @@ const Home: React.FC = () => {
       {/* Right -> Left: Content (now on the LEFT at lg+) */}
       <div className="lg:col-span-6 lg:order-1">
         <span className="inline-block text-l font-bold tracking-[.2em] uppercase">
-          <span className="bg-gradient-to-r from-amber-500 via-pink-600 to-fuchsia-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
             What we Offer
           </span>
         </span>
@@ -252,7 +227,7 @@ const Home: React.FC = () => {
           <Link
             to="/about"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white
-                       bg-gradient-to-r from-amber-400 via-pink-500 to-fuchsia-600
+                       bg-gradient-to-r from-sky-400 to-sky-500
                        shadow-lg hover:shadow-xl transition-all duration-200"
           >
             Explore
@@ -285,7 +260,7 @@ const Home: React.FC = () => {
     {/* Styled header — same content as before */}
     <div className="max-w-3xl">
       <span className="text-l font-bold tracking-[.25em] uppercase
-                       bg-gradient-to-r from-amber-500 via-pink-600 to-fuchsia-600
+                       bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600
                        bg-clip-text text-transparent">
         Workflow
       </span>
@@ -304,7 +279,7 @@ const Home: React.FC = () => {
       {/* Buyer steps */}
       <article className={card}>
         {/* gradient accent bar like the header vibe */}
-        <div className="h-1.5 w-14 rounded-full bg-gradient-to-r from-amber-500 via-pink-600 to-fuchsia-600 mb-4" />
+        <div className="h-1.5 w-14 rounded-full bg-gradient-to-r from-orange-400 to-orange-400 mb-4" />
         <h3 className="text-2xl md:text-3xl font-extrabold leading-tight text-slate-900">Buyer journey</h3>
 
         <ol className="mt-4 space-y-3">
@@ -319,7 +294,7 @@ const Home: React.FC = () => {
             <li key={i} className="flex gap-3">
               {/* gradient number chip for the screenshot vibe */}
               <span className="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full
-                               bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-xs font-bold">
+                               bg-gradient-to-r from-sky-400 to-sky-500 text-white text-xs font-bold">
                 {i + 1}
               </span>
               <span className="text-slate-700">{step}</span>
@@ -331,7 +306,7 @@ const Home: React.FC = () => {
       {/* Supplier actions */}
       <article className={card}>
         {/* gradient accent bar like the header vibe */}
-        <div className="h-1.5 w-14 rounded-full bg-gradient-to-r from-amber-500 via-pink-600 to-fuchsia-600 mb-4" />
+        <div className="h-1.5 w-14 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 mb-4" />
         <h3 className="text-2xl md:text-3xl font-extrabold leading-tight text-slate-900">Supplier actions</h3>
 
         <ul className="mt-4 space-y-2">
@@ -375,7 +350,7 @@ const Home: React.FC = () => {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         {/* left: copy */}
         <div className="max-w-2xl">
-          <div className="h-1.5 w-16 rounded-full bg-gradient-to-r from-amber-500 via-pink-600 to-fuchsia-600 mb-4" />
+          <div className="h-1.5 w-16 rounded-full bg-gradient-to-r from-orange-400 to-orange-400 mb-4" />
           <h3 className="text-slate-900 text-2xl md:text-3xl font-extrabold">
             Ready to launch your RFQ platform?
           </h3>
@@ -391,7 +366,7 @@ const Home: React.FC = () => {
             className="
               inline-flex items-center justify-center gap-2
               px-5 py-3 rounded-full font-semibold text-white
-              bg-gradient-to-r from-orange-400 via-pink-500 to-indigo-600
+              bg-gradient-to-r from-sky-400 to-sky-500
               shadow-lg hover:shadow-xl transition-all active:scale-[0.99]
               focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400/60
             "

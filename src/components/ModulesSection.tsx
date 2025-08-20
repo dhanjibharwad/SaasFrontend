@@ -4,7 +4,7 @@ import React from "react";
 /** Small gradient bullet icon */
 const Bullet: React.FC = () => (
   <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full
-                   bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-[10px] shadow">
+                   bg-gradient-to-r from-sky-400 to-sky-500 text-white text-[10px] shadow">
     <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
       <path d="M20 6L9 17l-5-5" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
@@ -53,7 +53,7 @@ export default function ModulesSection() {
         {/* Section header (eyebrow + title + description) */}
         <div className="max-w-3xl">
           <span className="inline-block text-l font-bold tracking-[.2em] uppercase
-                           bg-gradient-to-r from-sky-500 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent">
+                           bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
             Modules
           </span>
           <h2 className="mt-3 text-3xl md:text-5xl font-extrabold leading-tight text-slate-900">
