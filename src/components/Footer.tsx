@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Brand + About */}
         <div>
          <img 
-  src="/src/assets/sou1.png" 
+  src="/assets/sou1.png" 
   alt="Souqnests Logo" 
   className="h-20 w-auto"
 />
