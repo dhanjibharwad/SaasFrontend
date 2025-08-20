@@ -7,23 +7,23 @@ import PanelsSection from "../components/PanelsSection";
 const card =
   "rounded-2xl border border-slate-200/70 bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,.05)] p-6";
 
-const SectionTitle: React.FC<{ title: string; eyebrow?: string; desc?: string }> = ({
-  title,
-  eyebrow,
-  desc,
-}) => (
-  <header className="mb-8">
-    {eyebrow && (
-      <span className="inline-flex items-center gap-2 bg-white/80 text-slate-700 border border-slate-200 px-3 py-1.5 rounded-full text-xs font-bold shadow-sm">
-        {eyebrow}
-      </span>
-    )}
-    <h2 className="mt-3 text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">
-      {title}
-    </h2>
-    {desc && <p className="mt-2 text-slate-600 max-w-3xl">{desc}</p>}
-  </header>
-);
+// const SectionTitle: React.FC<{ title: string; eyebrow?: string; desc?: string }> = ({
+//   title,
+//   eyebrow,
+//   desc,
+// }) => (
+//   <header className="mb-8">
+//     {eyebrow && (
+//       <span className="inline-flex items-center gap-2 bg-white/80 text-slate-700 border border-slate-200 px-3 py-1.5 rounded-full text-xs font-bold shadow-sm">
+//         {eyebrow}
+//       </span>
+//     )}
+//     <h2 className="mt-3 text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">
+//       {title}
+//     </h2>
+//     {desc && <p className="mt-2 text-slate-600 max-w-3xl">{desc}</p>}
+//   </header>
+// );
 
 /** New list item (replaces <Bullet/>) */
 type LiProps = {
