@@ -59,7 +59,7 @@ const Home: React.FC = () => {
           {/* Left: Illustration */}
           <div className="lg:col-span-6 flex justify-center">
             <img
-              src="/assets/saas21.png" // <-- replace with your image path
+              src="/assets/newone1.png" // <-- replace with your image path
               alt="Team collaborating with charts, target and puzzle blocks"
               className="w-full max-w-2xl h-auto object-contain"
               loading="lazy"
