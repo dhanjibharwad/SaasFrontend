@@ -85,8 +85,8 @@ const Hero: React.FC = () => {
               Saas <span className="gradient-word">Application</span><br />For Business
             </h1>
             <p className="lead">
-              Make your awesome business idea a reality with Soften. High-performing software
-              solutions that drive your business forward.
+              Make your awesome business idea a reality with Soften. High-performing RFQ platform
+               that drive your business forward.
             </p>
 
             <div className="cta-row">

@@ -51,7 +51,7 @@ export default function Navbar() {
   return (
     <nav className={navWrap}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-23">
           {/* Brand (image logo) */}
           <Link to="/" aria-label="Souqnests home" className="flex items-center gap-3">
             {/* Put file at public/brand/sou1.png (Netlify-safe). Or import from src and use that variable. */}
@@ -59,7 +59,7 @@ export default function Navbar() {
               <img
                 src="/assets/sou1.png"
                 alt="SOUQNESTS"
-                className="h-20 w-auto object-contain select-none"
+                className="h-21 w-auto object-contain select-none"
                 decoding="async"
                 loading="eager"
                 draggable={false}
