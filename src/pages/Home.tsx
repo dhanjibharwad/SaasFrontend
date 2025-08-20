@@ -80,9 +80,13 @@ const Home: React.FC = () => {
             </h2>
 
             <p className="mt-5 max-w-2xl text-slate-600 leading-relaxed">
-              Scale your software operations through a custom engineering team.
-              Meet the demand of your company’s operations with a high-performing
-              nearshore team skilled in the technologies you need.
+              We build a single RFQ platform with dedicated portals for Admin, Buyer and Supplier covering registration,
+              subscriptions, tickets, performance, and admin controls like user management, financials and reports.
+            </p>
+            <p className="mt-5 max-w-2xl text-slate-600 leading-relaxed">
+              Buyers can create RFQs, track status and logs, receive structured offers, run side-by-side commercial comparisons,
+               manage vendors, and generate reports. Suppliers follow a clear journey register, receive RFQs, submit offers, and 
+               close supported by dashboards, filtered offer lists, reports, tickets, badges and subscription tools.
             </p>
 
             <div className="mt-8">
