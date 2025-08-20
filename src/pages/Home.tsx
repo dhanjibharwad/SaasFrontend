@@ -48,7 +48,8 @@ const Li = ({ children, className = "" }: LiProps) => (
 
 const Home: React.FC = () => {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen">                  
+    {/* by adding  bg-white all home page bg will be white */}
       {/* Top hero */}
       <Hero />
 
