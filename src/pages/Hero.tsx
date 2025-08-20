@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         .hero{
           width:min(1200px, 92%); margin:0 auto; display:grid;
           grid-template-columns: 1.05fr .95fr; gap:40px; align-items:center;
-          padding:120px 0 250px;
+          padding:120px 0 300px;
         }
         @media (max-width: 1000px){ .hero{ grid-template-columns:1fr; padding:56px 0 24px; } }
 
