@@ -75,7 +75,7 @@ const Home: React.FC = () => {
             </span>
 
             <h2 className="mt-3 text-3xl md:text-5xl font-extrabold leading-tight text-slate-900">
-              We&apos;re Best In Buisness
+              We&apos;re Best In Business
               <br className="hidden md:block" /> Development
             </h2>
 
@@ -219,7 +219,7 @@ const Home: React.FC = () => {
         </span>
 
         <h2 className="mt-3 text-3xl md:text-5xl font-extrabold leading-tight text-slate-900">
-          We Delevier Best
+          We Deliver Best
           <br className="hidden md:block" /> Solutions
         </h2>
 
