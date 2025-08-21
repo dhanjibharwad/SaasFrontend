@@ -1,16 +1,28 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Mail, Phone, MapPin, ArrowUp } from "lucide-react";
 
 export default function Footer() {
+  const [showTop, setShowTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShowTop(window.scrollY > 200);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
   return (
     <footer className="bg-[#0d1b2a] text-gray-300">
       <div className="container mx-auto px-6 py-18 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand + About */}
         <div>
-         <img 
-  src="/assets/sou1.png" 
-  alt="Souqnests Logo" 
-  className="h-22 w-auto"
-/>
+          <img
+            src="/assets/sou1.png"
+            alt="Souqnests Logo"
+            className="h-22 w-auto"
+          />
 
           <p className="mt-3 text-sm">
             Empowering businesses with smart SaaS solutions to manage RFQs,
@@ -88,6 +100,23 @@ export default function Footer() {
           <a href="/security" className="hover:text-sky-400">Security</a>
         </div>
       </div>
+
+      {/* Scroll-to-top button (floats, defined inside Footer) */}
+      <button
+        onClick={scrollTop}
+        title="Back to top"
+        aria-label="Scroll to top"
+        className={
+          "group fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 rounded-full p-3 md:p-4 text-white " +
+          "bg-gradient-to-r from-sky-400 to-sky-800 shadow-lg hover:shadow-xl " +
+          "focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-sky-400 " +
+          "transition-all " +
+          (showTop ? "opacity-100" : "opacity-0 pointer-events-none")
+        }
+      >
+        <ArrowUp className="h-5 w-5 md:h-6 md:w-6 transition-transform group-hover:-translate-y-0.5" />
+        <span className="sr-only">Scroll to top</span>
+      </button>
     </footer>
   );
 }
