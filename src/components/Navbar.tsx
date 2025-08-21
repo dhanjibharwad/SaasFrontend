@@ -127,7 +127,7 @@ export default function Navbar() {
                 <Link
                   to="/register"
                   className="ml-2 inline-flex items-center rounded-full px-5 py-2 font-semibold text-slate-900
-                             bg-gradient-to-r from-sky-400 to-orange-400 hover:brightness-105
+                             bg-gradient-to-r from-sky-400 to-sky-400 hover:brightness-105
                              shadow-[0_8px_24px_rgba(0,0,0,.25)] transition-all"
                 >
                   Get Started

@@ -217,11 +217,11 @@ const Register: React.FC = () => {
         </section>
 
         {/* RIGHT: IMAGE (optional—uncomment to show like login’s design) */}
-        {/* <aside className="right" aria-hidden="true">
-          <div className="imgCard">
-            <img className="heroImg" src="/src/assets/saas1.png" alt="" loading="lazy" />
+        <aside className="right" aria-hidden="true">
+          <div className="">
+            <img className="heroImg" src="/assets/signup.png" alt="" loading="lazy" />
           </div>
-        </aside> */}
+        </aside>
       </main>
     </>
   );

@@ -204,16 +204,16 @@ const Login: React.FC = () => {
         </section>
 
         {/* RIGHT: IMAGE */}
-        {/* <aside className="right" aria-hidden="true">
-          <div className="imgCard">
+        <aside className="right" aria-hidden="true">
+          <div className="">
             <img
               className="heroImg"
-              src="/src/assets/saas1.png"
+              src="/assets/signin.png"
               alt=""
               loading="lazy"
             />
           </div>
-        </aside> */}
+        </aside>
       </main>
     </>
   );
