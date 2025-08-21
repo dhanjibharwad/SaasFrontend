@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
         .hero-wrap{
           position:relative; overflow:hidden;
           background:
-            radial-gradient(1200px 800px at 15% 0%, #82C8E5 0%, #82C8E5 30%, transparent 60%),
+            radial-gradient(1200px 800px at 15% 0%, #8fffff 0%, #82C8E5 30%, transparent 60%),
             radial-gradient(1200px 900px at 85% 10%, #ffd7e8 0%, #ffd7e8 35%, transparent 65%),
             radial-gradient(1000px 700px at 50% 75%, #ffe8b6 0%, #ffe8b6 35%, transparent 70%),
             linear-gradient(180deg, #e9fbff, #f1e9ff 40%, #f7e7ff 70%, #ffffff 100%);
