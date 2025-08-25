@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./Hero"; // your animated hero
+import HeroPage from "./Hero"; // your animated hero
 import { Link } from "react-router-dom";
 import ModulesSection from "../components/ModulesSection";
 import PanelsSection from "../components/PanelsSection";
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
     <main className="min-h-screen bg-white">                  
     {/* by adding  bg-white all home page bg will be white */}
       {/* Top hero */}
-      <Hero />
+      <HeroPage />
 
 
 <section id="about" className="relative py-16 md:py-24">
