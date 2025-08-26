@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
 import { supabase } from "../lib/supabaseClient"
+import type { AuthChangeEvent, Session, User } from "@supabase/supabase-js"
 
 export function useAdminAuth() {
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<User | null>(null)
   const [isAdmin, setIsAdmin] = useState(false)
   const [loading, setLoading] = useState(true)
 
@@ -10,10 +11,10 @@ export function useAdminAuth() {
     checkAuth()
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (event, session) => {
-        if (event === 'SIGNED_IN' && session?.user) {
+      async (event: AuthChangeEvent, session: Session | null) => {
+        if (event === "SIGNED_IN" && session?.user) {
           await checkUserRole(session.user)
-        } else if (event === 'SIGNED_OUT') {
+        } else if (event === "SIGNED_OUT") {
           setUser(null)
           setIsAdmin(false)
         }
@@ -31,24 +32,24 @@ export function useAdminAuth() {
         await checkUserRole(user)
       }
     } catch (error) {
-      console.error('Auth check error:', error)
+      console.error("Auth check error:", error)
     } finally {
       setLoading(false)
     }
   }
 
-  const checkUserRole = async (user: any) => {
+  const checkUserRole = async (user: User) => {
     try {
       const { data: profile } = await supabase
-        .from('profiles')
-        .select('role')
-        .eq('id', user.id)
+        .from("profiles")
+        .select("role")
+        .eq("id", user.id)
         .single()
 
       setUser(user)
-      setIsAdmin(profile?.role === 'admin')
+      setIsAdmin(profile?.role === "admin")
     } catch (error) {
-      console.error('Role check error:', error)
+      console.error("Role check error:", error)
       setUser(user)
       setIsAdmin(false)
     }
@@ -62,6 +63,6 @@ export function useAdminAuth() {
     user,
     isAdmin,
     loading,
-    logout
+    logout,
   }
 }
