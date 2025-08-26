@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BarChart3, TrendingUp, Users, ShoppingCart, Menu, X } from 'lucide-react';
+import { BarChart3, TrendingUp, Users, Menu, X } from 'lucide-react';
 
 const HeroPage: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
