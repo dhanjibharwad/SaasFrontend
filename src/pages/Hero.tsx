@@ -277,6 +277,14 @@ const HeroPage: React.FC = () => {
     <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 transition-all duration-300 group-hover:w-full"></span>
   </a>
 
+  <a
+    href="#"
+    className="relative text-lg font-semibold text-white/80 hover:text-white transition-colors group"
+  >
+    Services
+    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 transition-all duration-300 group-hover:w-full"></span>
+  </a>
+
   <div className="relative group">
     {/* <a
       href="#"
